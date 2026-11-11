@@ -120,7 +120,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             dataUrl:
               'data:text/plain;charset=utf-8,' +
               encodeURIComponent(
-                'Documento demonstrativo do MedFEI Saúde+ - guia_oftalmo.pdf (Dra. Ana Ribeiro - 21/10/2026 10h00)'
+                'MedFEI Saúde+ - guia_oftalmo.pdf (Dra. Ana Ribeiro - 21/10/2026 10h00)'
               ),
           },
         ],
@@ -146,7 +146,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             dataUrl:
               'data:text/plain;charset=utf-8,' +
               encodeURIComponent(
-                'Documento demonstrativo do MedFEI Saúde+ - guia_encaminhamento_dermato.pdf (Dra. Marina Costa - 23/10/2026 14h30)'
+                'MedFEI Saúde+ - guia_encaminhamento_dermato.pdf (Dra. Marina Costa - 23/10/2026 14h30)'
               ),
           },
         ],
@@ -172,7 +172,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             dataUrl:
               'data:text/plain;charset=utf-8,' +
               encodeURIComponent(
-                'Documento demonstrativo do MedFEI Saúde+ - pedido_ecocardiograma_carlos.pdf (Dr. André Lima - 26/10/2026 10h00)'
+                'MedFEI Saúde+ - pedido_ecocardiograma_carlos.pdf (Dr. André Lima - 26/10/2026 10h00)'
               ),
           },
         ],
@@ -198,7 +198,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             size: '640 KB',
             dataUrl:
               'data:text/plain;charset=utf-8,' +
-              encodeURIComponent('Documento demonstrativo - guia_dermatologia.jpg'),
+              encodeURIComponent('MedFEI Saúde+ - guia_dermatologia.jpg'),
           },
           {
             id: 'hatt-2',
@@ -207,7 +207,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             size: '980 KB',
             dataUrl:
               'data:text/plain;charset=utf-8,' +
-              encodeURIComponent('Documento demonstrativo - laudo_dermatologia.pdf'),
+              encodeURIComponent('MedFEI Saúde+ - laudo_dermatologia.pdf'),
           },
         ],
       },
@@ -230,7 +230,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             size: '750 KB',
             dataUrl:
               'data:text/plain;charset=utf-8,' +
-              encodeURIComponent('Documento demonstrativo - eletrocardiograma_carlos.pdf'),
+              encodeURIComponent('MedFEI Saúde+ - eletrocardiograma_carlos.pdf'),
           },
         ],
       },
@@ -253,7 +253,7 @@ export function createInitialUserData(name = 'Giselle Souza', email = DEMO_EMAIL
             size: '420 KB',
             dataUrl:
               'data:text/plain;charset=utf-8,' +
-              encodeURIComponent('Documento demonstrativo - receita_oftalmologia.pdf'),
+              encodeURIComponent('MedFEI Saúde+ - receita_oftalmologia.pdf'),
           },
         ],
       },

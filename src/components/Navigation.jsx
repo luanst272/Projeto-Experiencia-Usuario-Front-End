@@ -120,7 +120,6 @@ export function Topbar({
         Saúde+
         <ChevronRightIcon size={14} />
         <span>{CRUMB_LABELS[activeView] || 'Visão geral'}</span>
-        <span className="react-badge">React + Estado Dinâmico</span>
       </div>
 
       <div className="top-actions">

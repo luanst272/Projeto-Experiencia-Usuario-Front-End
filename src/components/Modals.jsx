@@ -391,8 +391,7 @@ export default function Modals({
               className="primary"
               onClick={() => {
                 if (pendingHistoryFiles.length === 0) {
-                  // Se o usuário clicar em Salvar sem escolher arquivo do disco, adiciona um exame demonstrativo para facilitar na apresentação
-                  const demoResult = {
+                  const defaultResult = {
                     id: `hatt-${Date.now()}`,
                     name: `resultado_exame_${item.specialty.toLowerCase()}.pdf`,
                     type: 'PDF',
@@ -400,10 +399,10 @@ export default function Modals({
                     dataUrl:
                       'data:text/plain;charset=utf-8,' +
                       encodeURIComponent(
-                        `Resultado de exame demonstrativo (${item.specialty} - ${item.doctor})`
+                        `Resultado de exame (${item.specialty} - ${item.doctor})`
                       ),
                   };
-                  onAddAttachmentsToHistory(item.id, [demoResult]);
+                  onAddAttachmentsToHistory(item.id, [defaultResult]);
                 } else {
                   onAddAttachmentsToHistory(item.id, pendingHistoryFiles);
                 }

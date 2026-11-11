@@ -116,7 +116,7 @@ export default function App() {
     if (acc.password !== password) {
       return {
         ok: false,
-        message: 'Senha incorreta. Para a conta demonstrativa use 12345678.',
+        message: 'Senha incorreta. Verifique sua senha e tente novamente.',
       };
     }
 

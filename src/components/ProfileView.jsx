@@ -222,10 +222,6 @@ export default function ProfileView({
             Gerenciar permissões
           </button>
 
-          <button type="button" className="secondary full" onClick={onResetDemoData}>
-            Restaurar dados de demonstração
-          </button>
-
           <button type="button" className="secondary full signout-button" onClick={onLogout}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
