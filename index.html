@@ -1,0 +1,1311 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#203f91" />
+    <meta name="description" content="MedFEI Saúde+ — Prototipação de Alta Fidelidade em HTML5 e CSS3 estático." />
+    <title>MedFEI · Saúde+ (Protótipo de Alta Fidelidade)</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <!-- ===================================================================
+         0.1 TELA DE LOGIN (Padrão inicial ou #login)
+         =================================================================== -->
+    <section id="login" class="auth-wrap auth-screen">
+      <div class="phone-status">
+        <span>9:41</span>
+        <span class="status-icons">▮▮▮ ◉ ▰</span>
+      </div>
+      <div class="auth-card">
+        <div class="auth-brand-row">
+          <div class="brand">MedFEI · Saúde+</div>
+          <div class="brand-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+          </div>
+        </div>
+        <div class="auth-hero-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+        </div>
+        <h1>Sua saúde mais organizada. Sua rotina mais leve.</h1>
+        <p>Consultas, exames e lembretes em um só lugar.</p>
+
+        <label>
+          Nome ou e-mail
+          <div class="auth-input-wrap">
+            <input type="text" value="giselle.souza@email.com" placeholder="Seu nome ou e-mail" />
+            <span>✉</span>
+          </div>
+        </label>
+
+        <label>
+          Senha
+          <div class="auth-input-wrap">
+            <input type="password" value="12345678" placeholder="Digite sua senha" />
+            <span class="password-toggle">◎</span>
+          </div>
+        </label>
+
+        <a href="#inicio" class="primary full auth-enter">Entrar</a>
+        <a href="#cadastro" class="secondary full auth-create">Criar minha conta</a>
+        <a href="#inicio" class="text-button auth-forgot">Esqueci minha senha</a>
+
+        <div class="auth-spacer"></div>
+        <small>Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade.</small>
+        <footer>CCP310 · Centro Universitário FEI</footer>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         0.2 TELA DE CADASTRO (#cadastro)
+         =================================================================== -->
+    <section id="cadastro" class="auth-wrap auth-screen">
+      <div class="phone-status">
+        <span>9:41</span>
+        <span class="status-icons">▮▮▮ ◉ ▰</span>
+      </div>
+      <div class="auth-card">
+        <div class="auth-brand-row">
+          <div class="brand">MedFEI · Saúde+</div>
+          <div class="brand-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+          </div>
+        </div>
+        <div class="auth-hero-mark">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+        </div>
+        <h1>Crie sua conta Saúde+</h1>
+        <p>Organize suas consultas e documentos em um só lugar.</p>
+
+        <label>
+          Nome completo
+          <div class="auth-input-wrap">
+            <input type="text" placeholder="Seu nome completo" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>
+          </div>
+        </label>
+
+        <label>
+          E-mail
+          <div class="auth-input-wrap">
+            <input type="email" placeholder="seuemail@email.com" />
+            <span>✉</span>
+          </div>
+        </label>
+
+        <label>
+          Senha
+          <div class="auth-input-wrap">
+            <input type="password" placeholder="Mínimo de 6 caracteres" />
+            <span class="password-toggle">◎</span>
+          </div>
+        </label>
+
+        <label>
+          Confirmar senha
+          <div class="auth-input-wrap">
+            <input type="password" placeholder="Digite a senha novamente" />
+            <span>✓</span>
+          </div>
+        </label>
+
+        <a href="#inicio" class="primary full auth-enter">Criar minha conta</a>
+        <a href="#login" class="secondary full auth-create">Já tenho uma conta</a>
+
+        <div class="auth-spacer"></div>
+        <small>Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade.</small>
+        <footer>CCP310 · Centro Universitário FEI</footer>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         ESTRUTURA PRINCIPAL DO APLICATIVO (Telas Internas)
+         =================================================================== -->
+    <div class="app-shell">
+      <!-- Barra Lateral (Desktop) -->
+      <aside class="sidebar">
+        <div class="brand-lockup">
+          <div class="brand-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+          </div>
+          <div>
+            <div class="brand">MedFEI <span>· Saúde+</span></div>
+            <div class="brand-sub">Sua saúde, no seu tempo.</div>
+          </div>
+        </div>
+
+        <div class="side-caption">MENU PRINCIPAL</div>
+        <nav>
+          <a href="#inicio" class="nav-link" data-nav="inicio">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+            Início
+          </a>
+          <a href="#calendario" class="nav-link" data-nav="calendario">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+            Calendário
+          </a>
+          <a href="#historico" class="nav-link" data-nav="historico">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"></path><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path></svg>
+            Histórico
+          </a>
+          <a href="#perfil" class="nav-link" data-nav="perfil">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>
+            Perfil
+          </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="privacy-mini">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            <div>
+              <strong>Seus dados protegidos</strong>
+              <span>Suas permissões ficam sob seu controle.</span>
+            </div>
+          </div>
+          <a href="#perfil" class="user-mini">
+            <div class="avatar">GS</div>
+            <div>
+              <strong>Giselle Souza</strong>
+              <span>Minha conta</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+          </a>
+        </div>
+      </aside>
+
+      <!-- Área Principal -->
+      <main class="main-area">
+        <header class="topbar">
+          <div class="mobile-brand">
+            <div class="brand-mark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"></path></svg>
+            </div>
+            <strong>MedFEI <span>· Saúde+</span></strong>
+          </div>
+
+          <div class="crumb">
+            Saúde+
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+            <span class="crumb-text crumb-inicio">Visão geral</span>
+            <span class="crumb-text crumb-nova">Nova Consulta</span>
+            <span class="crumb-text crumb-calendario">Calendário</span>
+            <span class="crumb-text crumb-historico">Histórico</span>
+            <span class="crumb-text crumb-perfil">Perfil</span>
+          </div>
+
+          <div class="top-actions">
+            <a href="#notificacoes" class="icon-button" aria-label="Notificações">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+              <i></i>
+            </a>
+            <a href="#perfil" class="avatar">GS</a>
+          </div>
+
+          <!-- Popover de Notificações (#notificacoes) -->
+          <div id="notificacoes" class="notification-pop">
+            <strong>Lembretes</strong>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+              Você tem consultas próximas. Confira sua agenda.
+            </p>
+            <a href="#calendario" class="text-button">Ver calendário</a>
+          </div>
+        </header>
+
+        <div class="content">
+          <!-- ===============================================================
+               1. TELA INÍCIO / DASHBOARD (#inicio)
+               =============================================================== -->
+          <section id="inicio" class="view-screen">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">BEM-VINDA DE VOLTA</div>
+                <h1>Olá, Giselle</h1>
+                <p>Sua saúde, no seu tempo.</p>
+              </div>
+              <a href="#nova-consulta" class="primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                Nova consulta
+              </a>
+            </div>
+
+            <div class="patient-switch">
+              <label class="switch-option">
+                <input type="radio" name="inicio-patient" checked hidden />
+                <span>Titular</span>
+              </label>
+              <label class="switch-option">
+                <input type="radio" name="inicio-patient" hidden />
+                <span>Familiar</span>
+              </label>
+            </div>
+
+            <div class="section-title">
+              <h2>Próxima consulta</h2>
+              <a href="#calendario" class="text-button">
+                Ver agenda
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+              </a>
+            </div>
+
+            <div class="next-card">
+              <div class="next-top">
+                <span class="pill-blue">Oftalmologia</span>
+                <span class="status"><span></span> Confirmada</span>
+              </div>
+              <h3>Dra. Ana Ribeiro</h3>
+              <p class="clinic-line">Clínica Visão</p>
+              <div class="detail-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+                <span>21 de out de 2026 <b>·</b> 10h00</span>
+              </div>
+              <div class="detail-line">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Rua Domingos de Morais, 2187 · Vila Mariana, São Paulo</span>
+              </div>
+              <div class="card-actions">
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Domingos%20de%20Morais%2C%202187%20Vila%20Mariana%20Sao%20Paulo" target="_blank" rel="noopener noreferrer" class="primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+                  Ver rota
+                </a>
+                <a href="#detalhes" class="secondary">Ver detalhes</a>
+              </div>
+            </div>
+
+            <div class="section-title alert-title">
+              <h2>Alertas de retorno pendentes</h2>
+              <span class="count-badge">1</span>
+            </div>
+
+            <div class="return-alert">
+              <div class="alert-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+              </div>
+              <div class="alert-copy">
+                <strong>Retorno de Dermatologia recomendado para este mês</strong>
+                <p>6 meses desde a última consulta. Que tal agendar seu retorno?</p>
+                <a href="#nova-consulta" class="alert-action">
+                  Agendar agora
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </div>
+            </div>
+
+            <div class="bottom-grid">
+              <div class="small-panel">
+                <div class="panel-heading">
+                  <h3>Atalhos rápidos</h3>
+                  <span>Para você</span>
+                </div>
+                <div class="shortcut-grid">
+                  <a href="#nova-consulta">
+                    <span class="shortcut-icon blue">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                    </span>
+                    <strong>Nova consulta</strong>
+                    <small>Cadastre um compromisso</small>
+                  </a>
+                  <a href="#historico">
+                    <span class="shortcut-icon purple">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"></path><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path></svg>
+                    </span>
+                    <strong>Meus documentos</strong>
+                    <small>Consulte seus anexos</small>
+                  </a>
+                </div>
+              </div>
+
+              <div class="small-panel upcoming-panel">
+                <div class="panel-heading">
+                  <h3>Próximos compromissos</h3>
+                  <a href="#calendario" class="text-button">Ver todos</a>
+                </div>
+                <a href="#detalhes" class="mini-appointment">
+                  <div class="date-chip">
+                    <strong>21</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="mini-copy">
+                    <strong>Oftalmologia</strong>
+                    <span>Dra. Ana Ribeiro · 10:00</span>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+                <a href="#detalhes" class="mini-appointment">
+                  <div class="date-chip">
+                    <strong>23</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="mini-copy">
+                    <strong>Dermatologia</strong>
+                    <span>Dra. Marina Costa · 14:30</span>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+                <a href="#detalhes" class="mini-appointment">
+                  <div class="date-chip">
+                    <strong>26</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="mini-copy">
+                    <strong>Cardiologia</strong>
+                    <span>Dr. André Lima · 10:00</span>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- ===============================================================
+               2. TELA NOVA CONSULTA (#nova-consulta)
+               =============================================================== -->
+          <section id="nova-consulta" class="view-screen">
+            <a href="#inicio" class="back-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+              Voltar
+            </a>
+
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">AGENDA · NOVO COMPROMISSO</div>
+                <h1>Nova consulta</h1>
+                <p>Preencha os dados para organizar seu atendimento.</p>
+              </div>
+            </div>
+
+            <div class="form-layout">
+              <section class="form-card">
+                <div class="form-section-head">
+                  <span class="step-number">1</span>
+                  <div>
+                    <h2>Informações da consulta</h2>
+                    <p>Os campos com * são obrigatórios.</p>
+                  </div>
+                </div>
+
+                <div class="form-grid">
+                  <label>
+                    Especialidade *
+                    <select>
+                      <option value="">Selecione a especialidade</option>
+                      <option>Cardiologia</option>
+                      <option>Clínica Geral</option>
+                      <option selected>Dermatologia</option>
+                      <option>Oftalmologia</option>
+                      <option>Ortopedia</option>
+                      <option>Neurologia</option>
+                      <option>Pediatria</option>
+                      <option>Ginecologia</option>
+                    </select>
+                  </label>
+                  <label>
+                    Médico(a) *
+                    <input type="text" value="Dra. Marina Costa" placeholder="Nome do médico" />
+                  </label>
+                  <label>
+                    Clínica ou instituição
+                    <input type="text" value="Clínica Pele &amp; Saúde" placeholder="Nome da clínica" />
+                  </label>
+                  <label>
+                    Paciente
+                    <select>
+                      <option selected>Giselle Souza</option>
+                      <option>Sr. Carlos</option>
+                    </select>
+                  </label>
+                  <label>
+                    Data *
+                    <input type="date" value="2026-10-28" />
+                  </label>
+                  <label>
+                    Horário *
+                    <input type="time" value="14:30" />
+                  </label>
+                  <label class="span-2">
+                    Local / endereço *
+                    <input type="text" value="Rua Vergueiro, 1350 · Vila Mariana, São Paulo" placeholder="Rua, número, bairro e cidade" />
+                  </label>
+                </div>
+
+                <div class="form-section-head attach-head">
+                  <span class="step-number">2</span>
+                  <div>
+                    <h2>Guia ou documento médico</h2>
+                    <p>PDF, JPG ou PNG · até 10 MB por arquivo</p>
+                  </div>
+                </div>
+
+                <div class="upload-box">
+                  <input id="static-file-upload" type="file" accept=".pdf,.jpg,.jpeg,.png" multiple hidden />
+                  <div class="upload-symbol">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+                  </div>
+                  <strong>Anexe sua guia médica</strong>
+                  <span>Selecione um arquivo do dispositivo ou tire uma foto.</span>
+                  <div class="upload-actions">
+                    <label for="static-file-upload" class="secondary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>
+                      Escolher da galeria
+                    </label>
+                    <label for="static-file-upload" class="secondary">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
+                      Tirar foto
+                    </label>
+                  </div>
+                </div>
+
+                <div class="file-list">
+                  <div class="file-row">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                    <div>
+                      <strong>guia_encaminhamento_dermato.pdf</strong>
+                      <span>PDF · 540 KB</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="sync-row">
+                  <div class="sync-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Sincronizar com a agenda</strong>
+                    <p>Adicionar este compromisso ao calendário do dispositivo.</p>
+                  </div>
+                  <label class="toggle">
+                    <input type="checkbox" checked hidden />
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="form-footer">
+                  <a href="#calendario" class="secondary">Cancelar</a>
+                  <a href="#conflito" class="secondary">Ver alerta de conflito</a>
+                  <a href="#sucesso" class="primary">
+                    Salvar agendamento
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </a>
+                </div>
+              </section>
+
+              <aside class="form-aside">
+                <div class="aside-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                </div>
+                <h3>Seus dados, sob seu controle</h3>
+                <p>Os documentos ficam associados à consulta para você encontrá-los quando precisar.</p>
+                <div class="aside-divider"></div>
+                <div class="aside-tip">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                  <span>Confira data, horário e endereço antes de salvar.</span>
+                </div>
+                <div class="aside-tip">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+                  <span>Você pode adicionar outros exames depois pelo Histórico.</span>
+                </div>
+              </aside>
+            </div>
+          </section>
+
+          <!-- ===============================================================
+               3. TELA CALENDÁRIO (#calendario)
+               =============================================================== -->
+          <section id="calendario" class="view-screen">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">SUA ROTINA DE SAÚDE</div>
+                <h1>Calendário</h1>
+                <p>Visualize e organize os compromissos de saúde.</p>
+              </div>
+              <a href="#nova-consulta" class="primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                Nova consulta
+              </a>
+            </div>
+
+            <div class="filter-row">
+              <div class="segmented">
+                <label class="seg-option">
+                  <input type="radio" name="cal-patient" checked hidden />
+                  <span>Todos</span>
+                </label>
+                <label class="seg-option">
+                  <input type="radio" name="cal-patient" hidden />
+                  <span>Titular</span>
+                </label>
+                <label class="seg-option">
+                  <input type="radio" name="cal-patient" hidden />
+                  <span>Familiar</span>
+                </label>
+              </div>
+              <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                <input type="text" placeholder="Buscar consulta..." />
+              </div>
+            </div>
+
+            <div class="calendar-layout">
+              <section class="panel calendar-panel">
+                <div class="calendar-month">
+                  <span class="icon-button" aria-label="Mês anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg>
+                  </span>
+                  <h2>outubro de 2026</h2>
+                  <span class="icon-button" aria-label="Próximo mês">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                  </span>
+                </div>
+
+                <div class="calendar-grid">
+                  <div class="weekday">D</div>
+                  <div class="weekday">S</div>
+                  <div class="weekday">T</div>
+                  <div class="weekday">Q</div>
+                  <div class="weekday">Q</div>
+                  <div class="weekday">S</div>
+                  <div class="weekday">S</div>
+
+                  <button type="button" class="calendar-day outside" disabled></button>
+                  <button type="button" class="calendar-day outside" disabled></button>
+                  <button type="button" class="calendar-day outside" disabled></button>
+                  <button type="button" class="calendar-day outside" disabled></button>
+                  <button type="button" class="calendar-day">1</button>
+                  <button type="button" class="calendar-day">2</button>
+                  <button type="button" class="calendar-day">3</button>
+
+                  <button type="button" class="calendar-day">4</button>
+                  <button type="button" class="calendar-day">5</button>
+                  <button type="button" class="calendar-day">6</button>
+                  <button type="button" class="calendar-day">7</button>
+                  <button type="button" class="calendar-day">8</button>
+                  <button type="button" class="calendar-day">9</button>
+                  <button type="button" class="calendar-day">10</button>
+
+                  <button type="button" class="calendar-day">11</button>
+                  <button type="button" class="calendar-day">12</button>
+                  <button type="button" class="calendar-day">13</button>
+                  <button type="button" class="calendar-day">14</button>
+                  <button type="button" class="calendar-day">15</button>
+                  <button type="button" class="calendar-day">16</button>
+                  <button type="button" class="calendar-day">17</button>
+
+                  <button type="button" class="calendar-day">18</button>
+                  <button type="button" class="calendar-day today">19</button>
+                  <button type="button" class="calendar-day">20</button>
+                  <button type="button" class="calendar-day has-event selected-day" title="1 consulta(s)">21<i></i></button>
+                  <button type="button" class="calendar-day">22</button>
+                  <button type="button" class="calendar-day has-event" title="1 consulta(s)">23<i></i></button>
+                  <button type="button" class="calendar-day">24</button>
+
+                  <button type="button" class="calendar-day">25</button>
+                  <button type="button" class="calendar-day has-event" title="1 consulta(s)">26<i></i></button>
+                  <button type="button" class="calendar-day">27</button>
+                  <button type="button" class="calendar-day">28</button>
+                  <button type="button" class="calendar-day">29</button>
+                  <button type="button" class="calendar-day">30</button>
+                  <button type="button" class="calendar-day">31</button>
+                </div>
+
+                <div class="calendar-legend">
+                  <span><i class="blue-dot"></i> Dia com consulta</span>
+                  <span><i class="gray-dot"></i> Sem compromisso</span>
+                </div>
+              </section>
+
+              <section class="panel agenda-panel">
+                <div class="panel-heading">
+                  <div>
+                    <h2>Consultas do período</h2>
+                    <p>3 consulta(s)</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"></line><line x1="10" x2="3" y1="4" y2="4"></line><line x1="21" x2="12" y1="12" y2="12"></line><line x1="8" x2="3" y1="12" y2="12"></line><line x1="21" x2="16" y1="20" y2="20"></line><line x1="12" x2="3" y1="20" y2="20"></line><line x1="14" x2="14" y1="2" y2="6"></line><line x1="8" x2="8" y1="10" y2="14"></line><line x1="16" x2="16" y1="18" y2="22"></line></svg>
+                </div>
+
+                <a href="#detalhes" class="agenda-row">
+                  <div class="agenda-date">
+                    <strong>21</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="agenda-info">
+                    <span class="pill-blue">Oftalmologia</span>
+                    <strong>Dra. Ana Ribeiro</strong>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                      10h00 · Clínica Visão
+                    </span>
+                    <small>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Rua Domingos de Morais, 2187 · Vila Mariana, São Paulo
+                    </small>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+
+                <a href="#detalhes" class="agenda-row">
+                  <div class="agenda-date">
+                    <strong>23</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="agenda-info">
+                    <span class="pill-blue">Dermatologia</span>
+                    <strong>Dra. Marina Costa</strong>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                      14h30 · Pele &amp; Saúde
+                    </span>
+                    <small>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Rua Vergueiro, 1350 · São Paulo
+                    </small>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+
+                <a href="#detalhes" class="agenda-row">
+                  <div class="agenda-date">
+                    <strong>26</strong>
+                    <span>out</span>
+                  </div>
+                  <div class="agenda-info">
+                    <span class="pill-blue">Cardiologia</span>
+                    <strong>Dr. André Lima</strong>
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                      10h00 · Instituto Coração (Sr. Carlos)
+                    </span>
+                    <small>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                      Av. Paulista, 1009 · Bela Vista, São Paulo
+                    </small>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+                </a>
+              </section>
+            </div>
+          </section>
+
+          <!-- ===============================================================
+               4. TELA HISTÓRICO (#historico)
+               =============================================================== -->
+          <section id="historico" class="view-screen">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">SEUS REGISTROS DE SAÚDE</div>
+                <h1>Histórico</h1>
+                <p>Encontre guias e exames junto de cada consulta.</p>
+              </div>
+            </div>
+
+            <div class="history-toolbar">
+              <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                <input type="text" placeholder="Buscar por especialidade ou médico..." />
+                <kbd>⌘ K</kbd>
+              </div>
+              <div class="segmented">
+                <label class="seg-option">
+                  <input type="radio" name="hist-patient" checked hidden />
+                  <span>Todos</span>
+                </label>
+                <label class="seg-option">
+                  <input type="radio" name="hist-patient" hidden />
+                  <span>Titular</span>
+                </label>
+                <label class="seg-option">
+                  <input type="radio" name="hist-patient" hidden />
+                  <span>Familiar</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="history-summary">
+              <div>
+                <span class="summary-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"></path><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path></svg>
+                </span>
+                <div>
+                  <strong>3 consultas</strong>
+                  <span>no seu histórico</span>
+                </div>
+              </div>
+              <div>
+                <span class="summary-icon lavender">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+                </span>
+                <div>
+                  <strong>4 documentos</strong>
+                  <span>arquivados</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="history-list">
+              <a href="#detalhes-historico" class="history-card">
+                <div class="history-date">
+                  <span>23</span>
+                  <strong>abr</strong>
+                  <small>2026</small>
+                </div>
+                <div class="history-info">
+                  <div class="history-title-row">
+                    <span class="pill-blue">Dermatologia</span>
+                    <span class="attachment-count">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+                      2 anexos
+                    </span>
+                  </div>
+                  <h3>Dra. Marina Costa</h3>
+                  <p>Giselle Souza · Clínica Pele &amp; Saúde</p>
+                  <span class="muted-line">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                    14h30 · Consulta realizada
+                  </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="history-chevron"><path d="m9 18 6-6-6-6"></path></svg>
+              </a>
+
+              <a href="#detalhes-historico" class="history-card">
+                <div class="history-date">
+                  <span>12</span>
+                  <strong>mar</strong>
+                  <small>2026</small>
+                </div>
+                <div class="history-info">
+                  <div class="history-title-row">
+                    <span class="pill-blue">Cardiologia</span>
+                    <span class="attachment-count">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+                      1 anexos
+                    </span>
+                  </div>
+                  <h3>Dr. André Lima</h3>
+                  <p>Sr. Carlos · Instituto Coração</p>
+                  <span class="muted-line">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                    11h00 · Consulta realizada
+                  </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="history-chevron"><path d="m9 18 6-6-6-6"></path></svg>
+              </a>
+
+              <a href="#detalhes-historico" class="history-card">
+                <div class="history-date">
+                  <span>04</span>
+                  <strong>fev</strong>
+                  <small>2026</small>
+                </div>
+                <div class="history-info">
+                  <div class="history-title-row">
+                    <span class="pill-blue">Oftalmologia</span>
+                    <span class="attachment-count">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+                      1 anexos
+                    </span>
+                  </div>
+                  <h3>Dra. Ana Ribeiro</h3>
+                  <p>Giselle Souza · Clínica Visão</p>
+                  <span class="muted-line">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16.5 12"></polyline></svg>
+                    09h30 · Consulta realizada
+                  </span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="history-chevron"><path d="m9 18 6-6-6-6"></path></svg>
+              </a>
+            </div>
+          </section>
+
+          <!-- ===============================================================
+               5. TELA PERFIL E PREFERÊNCIAS (#perfil)
+               =============================================================== -->
+          <section id="perfil" class="view-screen">
+            <div class="page-heading">
+              <div>
+                <div class="eyebrow">SUA CONTA</div>
+                <h1>Perfil</h1>
+                <p>Gerencie seus dados, familiares e preferências.</p>
+              </div>
+              <a href="#permissoes" class="secondary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                Privacidade
+              </a>
+            </div>
+
+            <div class="profile-layout">
+              <section class="panel profile-card">
+                <div class="profile-cover">
+                  <div class="profile-avatar">GS</div>
+                  <div>
+                    <h2>Giselle Souza</h2>
+                    <p>48 anos · Titular / gerenciador familiar</p>
+                  </div>
+                  <a href="#editar-perfil" class="secondary small">Editar perfil</a>
+                </div>
+
+                <div class="profile-facts">
+                  <div>
+                    <span>Tipo sanguíneo</span>
+                    <strong>O+</strong>
+                  </div>
+                  <div>
+                    <span>Alergias</span>
+                    <strong>Nenhuma informada</strong>
+                  </div>
+                  <div>
+                    <span>Contato</span>
+                    <strong>(11) 99932-1020</strong>
+                  </div>
+                </div>
+
+                <div class="profile-section">
+                  <div class="panel-heading">
+                    <div>
+                      <h3>Familiares e dependentes</h3>
+                      <p>Organize os cuidados de quem você acompanha.</p>
+                    </div>
+                    <a href="#adicionar-familiar" class="secondary small">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+                      Adicionar
+                    </a>
+                  </div>
+
+                  <div class="dependent-row">
+                    <div class="dependent-avatar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                    </div>
+                    <div>
+                      <strong>Sr. Carlos</strong>
+                      <span>Pai · paciente acompanhado</span>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="panel preferences-card">
+                <div class="panel-heading">
+                  <div>
+                    <h2>Preferências</h2>
+                    <p>Escolha como deseja receber avisos.</p>
+                  </div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                </div>
+
+                <label class="setting-label">
+                  Antecedência dos avisos
+                  <select>
+                    <option>1 semana antes</option>
+                    <option>2 a 3 dias antes</option>
+                    <option selected>1 dia antes</option>
+                  </select>
+                </label>
+
+                <div class="setting-row">
+                  <div class="setting-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Notificação Push</strong>
+                    <span>Alertas neste dispositivo</span>
+                  </div>
+                  <label class="toggle">
+                    <input type="checkbox" checked hidden />
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="setting-row">
+                  <div class="setting-icon green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+                  </div>
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <span>Lembretes por mensagem</span>
+                  </div>
+                  <label class="toggle">
+                    <input type="checkbox" hidden />
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="setting-row">
+                  <div class="setting-icon purple">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+                  </div>
+                  <div>
+                    <strong>Sincronizar calendário</strong>
+                    <span>Adicionar consultas à agenda</span>
+                  </div>
+                  <label class="toggle">
+                    <input type="checkbox" checked hidden />
+                    <span></span>
+                  </label>
+                </div>
+
+                <div class="privacy-note">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+                  <span>Permissões e privacidade podem ser alteradas a qualquer momento.</span>
+                </div>
+
+                <a href="#permissoes" class="secondary full">Gerenciar permissões</a>
+                <a href="#login" class="secondary full signout-button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" x2="9" y1="12" y2="12"></line></svg>
+                  Sair da conta
+                </a>
+              </section>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Barra de Navegação Inferior (Mobile) -->
+      <nav class="mobile-nav">
+        <a href="#inicio" data-nav="inicio">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path></svg>
+          <span>Início</span>
+        </a>
+        <a href="#calendario" data-nav="calendario">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+          <span>Calendário</span>
+        </a>
+        <a href="#historico" data-nav="historico">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"></path><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"></path><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"></path></svg>
+          <span>Histórico</span>
+        </a>
+        <a href="#perfil" data-nav="perfil">
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 0 0-16 0"></path></svg>
+          <span>Perfil</span>
+        </a>
+      </nav>
+
+      <!-- =================================================================
+           MODAIS ESTÁTICOS (Acionados via CSS :target)
+           ================================================================= -->
+
+      <!-- Modal 1: Detalhes da Consulta Futura (#detalhes) -->
+      <div id="detalhes" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <div>
+              <div class="eyebrow">DETALHES DO COMPROMISSO</div>
+              <h2>Detalhes da consulta</h2>
+            </div>
+            <a href="#inicio" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <span class="pill-blue">Oftalmologia</span>
+          <h3 class="detail-doctor">Dra. Ana Ribeiro</h3>
+          <p class="detail-clinic">Clínica Visão · Giselle Souza</p>
+          <div class="detail-box">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+              <span>
+                <small>Data e horário</small>
+                <strong>21 de out de 2026 · 10h00</strong>
+              </span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>
+                <small>Endereço</small>
+                <strong>Rua Domingos de Morais, 2187 · Vila Mariana, São Paulo</strong>
+              </span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="m9 16 2 2 4-4"></path></svg>
+              <span>
+                <small>Calendário</small>
+                <strong>Sincronizada com a agenda</strong>
+              </span>
+            </div>
+          </div>
+
+          <h4 class="attachments-heading">Documentos · 1 anexo</h4>
+          <a href="data:text/plain;charset=utf-8,Documento%20demonstrativo%20do%20MedFEI%20Saude%2B%20-%20guia_oftalmo.pdf" download="guia_oftalmo.txt" class="file-row saved-file downloadable-file">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+            <div>
+              <strong>guia_oftalmo.pdf</strong>
+              <span>PDF · 480 KB · Toque para baixar</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="file-check"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          </a>
+
+          <div class="modal-actions">
+            <a href="https://wa.me/?text=Ol%C3%A1!%20Consulta%20de%20Oftalmologia%20com%20Dra.%20Ana%20Ribeiro%20em%2021%2F10%2F2026%20%C3%A0s%2010h00." target="_blank" rel="noopener noreferrer" class="secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line></svg>
+              Compartilhar
+            </a>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Rua%20Domingos%20de%20Morais%2C%202187%20Vila%20Mariana%20Sao%20Paulo" target="_blank" rel="noopener noreferrer" class="primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="3 11 22 2 13 21 11 13 3 11"></polygon></svg>
+              Ver rota
+            </a>
+          </div>
+          <a href="#excluir" class="danger-button full" style="margin-top: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg>
+            Excluir consulta
+          </a>
+        </div>
+      </div>
+
+      <!-- Modal 2: Detalhes de Consulta no Histórico (#detalhes-historico) -->
+      <div id="detalhes-historico" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <div>
+              <div class="eyebrow">DETALHES DO COMPROMISSO</div>
+              <h2>Detalhes da consulta</h2>
+            </div>
+            <a href="#historico" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <span class="pill-blue">Dermatologia</span>
+          <h3 class="detail-doctor">Dra. Marina Costa</h3>
+          <p class="detail-clinic">Clínica Pele &amp; Saúde · Giselle Souza</p>
+          <div class="detail-box">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+              <span>
+                <small>Data e horário</small>
+                <strong>23 de abr de 2026 · 14h30</strong>
+              </span>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>
+                <small>Endereço</small>
+                <strong>Rua Vergueiro, 1350 · São Paulo</strong>
+              </span>
+            </div>
+          </div>
+
+          <h4 class="attachments-heading">Documentos · 2 anexos</h4>
+          <a href="data:text/plain;charset=utf-8,Documento%20demonstrativo%20-%20guia_dermatologia.jpg" download="guia_dermatologia.txt" class="file-row saved-file downloadable-file">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+            <div>
+              <strong>guia_dermatologia.jpg</strong>
+              <span>JPG · 640 KB · Toque para baixar</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="file-check"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          </a>
+          <a href="data:text/plain;charset=utf-8,Documento%20demonstrativo%20-%20laudo_dermatologia.pdf" download="laudo_dermatologia.txt" class="file-row saved-file downloadable-file">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+            <div>
+              <strong>laudo_dermatologia.pdf</strong>
+              <span>PDF · 980 KB · Toque para baixar</span>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="file-check"><path d="M15 3h6v6"></path><path d="M10 14 21 3"></path><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path></svg>
+          </a>
+
+          <a href="#adicionar-anexo" class="secondary full add-attachment-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+            Adicionar novo anexo
+          </a>
+        </div>
+      </div>
+
+      <!-- Modal 3: Adicionar Novo Anexo (#adicionar-anexo) -->
+      <div id="adicionar-anexo" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <div>
+              <div class="eyebrow">HISTÓRICO · DOCUMENTOS</div>
+              <h2>Adicionar novo anexo</h2>
+            </div>
+            <a href="#historico" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <p class="muted-paragraph">Dermatologia · Giselle Souza · 23 de abr de 2026</p>
+          <div class="upload-box compact">
+            <input id="modal-file-upload" type="file" accept=".pdf,.jpg,.jpeg,.png" multiple hidden />
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.234 20.252 21 12.3"></path><path d="m16 6-8.414 8.586a2 2 0 0 0 0 2.828 2 2 0 0 0 2.828 0l8.414-8.586a4 4 0 0 0 0-5.656 4 4 0 0 0-5.656 0l-8.415 8.585a6 6 0 1 0 8.486 8.486"></path></svg>
+            <strong>Selecione exames ou guias</strong>
+            <span>PDF, JPG ou PNG · até 10 MB</span>
+            <label for="modal-file-upload" class="secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
+              Escolher arquivos
+            </label>
+          </div>
+          <div class="modal-actions">
+            <a href="#detalhes-historico" class="secondary">Cancelar</a>
+            <a href="#historico" class="primary">Salvar alterações</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4: Confirmação de Agendamento (#sucesso) -->
+      <div id="sucesso" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="success-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+          </div>
+          <div class="eyebrow center">AGENDAMENTO CONCLUÍDO</div>
+          <h2 class="center">Consulta agendada!</h2>
+          <p class="center muted-paragraph">Sua consulta foi salva e marcada para sincronização com a agenda.</p>
+          <div class="success-summary">
+            <span class="pill-blue">Dermatologia</span>
+            <h3>Dra. Marina Costa</h3>
+            <p>28 de out de 2026 · 14h30</p>
+            <p>
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Rua Vergueiro, 1350 · Vila Mariana, São Paulo
+            </p>
+            <div class="file-row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+              <strong>guia_encaminhamento_dermato.pdf</strong>
+              <span class="file-check">Salvo</span>
+            </div>
+          </div>
+          <a href="#calendario" class="primary full">
+            Ver no calendário
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg>
+          </a>
+          <a href="#inicio" class="text-button full">Voltar ao início</a>
+        </div>
+      </div>
+
+      <!-- Modal 5: Conflito de Horário (#conflito) -->
+      <div id="conflito" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="warning-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path><path d="M12 9v4"></path><path d="M12 17h.01"></path></svg>
+          </div>
+          <div class="eyebrow center">VERIFIQUE SUA AGENDA</div>
+          <h2 class="center">Conflito de horário</h2>
+          <p class="center muted-paragraph">Você já tem uma consulta neste horário. Escolha outro horário antes de salvar.</p>
+          <div class="conflict-box">
+            <strong>Já agendada</strong>
+            <h3>Oftalmologia</h3>
+            <p>Dra. Ana Ribeiro</p>
+            <span>21 de out de 2026 · 10:00</span>
+          </div>
+          <a href="#nova-consulta" class="primary full">Alterar data ou horário</a>
+          <a href="#calendario" class="text-button full">Cancelar novo agendamento</a>
+        </div>
+      </div>
+
+      <!-- Modal 6: Confirmar Exclusão (#excluir) -->
+      <div id="excluir" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="warning-mark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"></path><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"></path><line x1="10" x2="10" y1="11" y2="17"></line><line x1="14" x2="14" y1="11" y2="17"></line></svg>
+          </div>
+          <h2 class="center">Excluir consulta?</h2>
+          <p class="center muted-paragraph">A consulta de Oftalmologia com Dra. Ana Ribeiro será removida do seu perfil. Esta ação não pode ser desfeita.</p>
+          <div class="modal-actions">
+            <a href="#detalhes" class="secondary">Cancelar</a>
+            <a href="#inicio" class="danger-button">Excluir consulta</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 7: Editar Perfil (#editar-perfil) -->
+      <div id="editar-perfil" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <h2>Editar perfil</h2>
+            <a href="#perfil" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <label>
+            Nome completo
+            <input type="text" value="Giselle Souza" />
+          </label>
+          <div class="modal-actions">
+            <a href="#perfil" class="secondary">Cancelar</a>
+            <a href="#perfil" class="primary">Salvar alterações</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 8: Adicionar Familiar (#adicionar-familiar) -->
+      <div id="adicionar-familiar" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <h2>Adicionar familiar</h2>
+            <a href="#perfil" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <label>
+            Nome do familiar
+            <input type="text" placeholder="Nome completo" />
+          </label>
+          <p class="muted-paragraph">Você poderá associar consultas a este familiar.</p>
+          <div class="modal-actions">
+            <a href="#perfil" class="secondary">Cancelar</a>
+            <a href="#perfil" class="primary">Adicionar familiar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 9: Permissões Iniciais (#permissoes) -->
+      <div id="permissoes" class="modal-backdrop">
+        <div class="modal-card" role="dialog" aria-modal="true">
+          <div class="modal-header">
+            <div>
+              <div class="eyebrow">ACESSO E PREFERÊNCIAS</div>
+              <h2>Permissões iniciais</h2>
+            </div>
+            <a href="#perfil" class="icon-button" aria-label="Fechar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+            </a>
+          </div>
+          <p class="muted-paragraph">Você decide o que compartilhar. Tudo é opcional e pode ser alterado no Perfil.</p>
+
+          <div class="setting-row">
+            <div class="setting-icon purple">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path><path d="M8 14h.01"></path><path d="M12 14h.01"></path><path d="M16 14h.01"></path><path d="M8 18h.01"></path><path d="M12 18h.01"></path><path d="M16 18h.01"></path></svg>
+            </div>
+            <div>
+              <strong>Sincronizar com calendário</strong>
+              <span>Google ou Apple Calendar</span>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" checked hidden />
+              <span></span>
+            </label>
+          </div>
+
+          <div class="setting-row">
+            <div class="setting-icon green">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path></svg>
+            </div>
+            <div>
+              <strong>Receber alertas via WhatsApp</strong>
+              <span>Lembretes no seu número</span>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" hidden />
+              <span></span>
+            </label>
+          </div>
+
+          <div class="setting-row">
+            <div class="setting-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div>
+              <strong>Permitir acesso à localização</strong>
+              <span>Ajuda a traçar a rota</span>
+            </div>
+            <label class="toggle">
+              <input type="checkbox" checked hidden />
+              <span></span>
+            </label>
+          </div>
+
+          <div class="privacy-note">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
+            <span>Usamos seus dados apenas para as finalidades autorizadas. Revogue quando quiser.</span>
+          </div>
+
+          <a href="#perfil" class="primary full">Continuar com minhas escolhas</a>
+          <a href="#perfil" class="text-button full">Continuar sem permitir</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
