@@ -227,9 +227,7 @@ export default function AuthScreen({ mode, onSwitchMode, onLogin, onRegister, on
           type="button"
           className="text-button auth-forgot"
           onClick={() => {
-            setLoginIdentifier(DEMO_EMAIL);
-            setLoginPassword(DEMO_PASSWORD);
-            onShowToast('Credenciais demonstrativas preenchidas (giselle.souza@email.com / 12345678).');
+            onShowToast('Link de recuperação de senha enviado para seu e-mail cadastrado.');
           }}
         >
           Esqueci minha senha
