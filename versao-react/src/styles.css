@@ -180,7 +180,7 @@ body{background:#e9edf4}
   .history-card { width: 100%; min-width: 0; }
 }
 
-/* Edição desktop dedicada — baseada na hierarquia e nos fluxos do protótipo MedFEI · Saúde+. */
+/* Edição desktop dedicada — baseada na hierarquia e nos fluxos do Saúde+. */
 @media (min-width: 900px) {
   :root { color-scheme: light; }
   body { min-width: 760px; background: #f4f7fb; }
@@ -243,8 +243,8 @@ body{background:#e9edf4}
   .modal-card { width: min(620px, calc(100vw - 56px)); max-width: 620px; max-height: calc(100dvh - 56px); border-radius: 22px; padding: 28px; }
   .toast { position: fixed; bottom: 24px; right: 28px; left: auto; max-width: 420px; }
   .auth-wrap { position: relative; grid-template-columns: minmax(0, 1fr) minmax(420px, .82fr); gap: clamp(48px, 8vw, 120px); padding: 7vh clamp(48px, 9vw, 150px); background: radial-gradient(circle at 16% 20%, #e3edff 0, transparent 34%), #f4f7fb; }
-  .auth-wrap::before { content: "MedFEI · Saúde+\\A\\A Sua saúde mais organizada.\\A Sua rotina mais leve."; white-space: pre-line; display: flex; flex-direction: column; justify-content: center; max-width: 620px; color: #172b4d; font-size: clamp(32px, 3.2vw, 52px); line-height: 1.2; font-weight: 750; letter-spacing: -1.8px; }
-  .auth-wrap::after { content: "Consultas, exames e lembretes em um só lugar.\\A\\A CCP310 · Centro Universitário FEI"; white-space: pre-line; position: absolute; left: clamp(48px, 9vw, 150px); bottom: 7vh; color: #68778d; font-size: 15px; line-height: 1.8; }
+  .auth-wrap::before { content: "Saúde+\A\A Sua saúde mais organizada.\A Sua rotina mais leve."; white-space: pre-line; display: flex; flex-direction: column; justify-content: center; max-width: 620px; color: #172b4d; font-size: clamp(32px, 3.2vw, 52px); line-height: 1.2; font-weight: 750; letter-spacing: -1.8px; }
+  .auth-wrap::after { content: "Consultas, exames e lembretes em um só lugar."; white-space: pre-line; position: absolute; left: clamp(48px, 9vw, 150px); bottom: 7vh; color: #68778d; font-size: 15px; line-height: 1.8; }
   .auth-card { align-self: center; width: min(100%, 480px); padding: 38px; }
   .auth-brand-row .brand { font-size: 24px; }
   .auth-hero-mark { height: 76px; width: 76px; border-radius: 22px; margin: 28px auto 22px; }

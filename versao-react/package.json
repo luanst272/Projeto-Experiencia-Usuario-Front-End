@@ -1,8 +1,8 @@
 {
-  "name": "medfei-saude-plus-react",
+  "name": "saude-plus-react",
   "private": true,
   "version": "1.0.0",
-  "description": "MedFEI · Saúde+ — Versão interativa em HTML5, CSS3, JavaScript e React (CCP310 - FEI)",
+  "description": "Saúde+ — Aplicação Web em HTML5, CSS3, JavaScript e React",
   "type": "module",
   "scripts": {
     "dev": "vite",

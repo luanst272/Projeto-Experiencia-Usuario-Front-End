@@ -14,7 +14,7 @@ import ProfileView from './components/ProfileView';
 import Modals from './components/Modals';
 import { CheckCircleIcon, CloseIcon } from './components/Icons';
 
-const STORAGE_KEY = 'medfei_saude_plus_react_v1';
+const STORAGE_KEY = 'saude_plus_react_v1';
 
 function loadStoredAccounts() {
   try {
