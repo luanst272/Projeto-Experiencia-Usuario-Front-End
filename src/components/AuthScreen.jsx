@@ -62,7 +62,7 @@ export default function AuthScreen({ mode, onSwitchMode, onLogin, onRegister, on
         </div>
         <form className="auth-card" onSubmit={handleRegisterSubmit}>
           <div className="auth-brand-row">
-            <div className="brand">MedFEI · Saúde+</div>
+            <div className="brand">Saúde+</div>
             <div className="brand-mark">
               <HeartPulseIcon size={25} />
             </div>
@@ -150,7 +150,6 @@ export default function AuthScreen({ mode, onSwitchMode, onLogin, onRegister, on
 
           <div className="auth-spacer" />
           <small>Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade.</small>
-          <footer>CCP310 · Centro Universitário FEI</footer>
         </form>
       </section>
     );
@@ -164,7 +163,7 @@ export default function AuthScreen({ mode, onSwitchMode, onLogin, onRegister, on
       </div>
       <form className="auth-card" onSubmit={handleLoginSubmit}>
         <div className="auth-brand-row">
-          <div className="brand">MedFEI · Saúde+</div>
+          <div className="brand">Saúde+</div>
           <div className="brand-mark">
             <HeartPulseIcon size={25} />
           </div>
@@ -235,7 +234,6 @@ export default function AuthScreen({ mode, onSwitchMode, onLogin, onRegister, on
 
         <div className="auth-spacer" />
         <small>Ao continuar, você concorda com os Termos de Uso e a Política de Privacidade.</small>
-        <footer>CCP310 · Centro Universitário FEI</footer>
       </form>
     </section>
   );

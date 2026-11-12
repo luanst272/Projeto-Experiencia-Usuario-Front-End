@@ -19,7 +19,7 @@ const DEFAULT_DEMO_FILE = {
   dataUrl:
     'data:text/plain;charset=utf-8,' +
     encodeURIComponent(
-      'MedFEI Saúde+ - Guia de Encaminhamento (guia_encaminhamento_dermato.pdf)'
+      'Saúde+ - Guia de Encaminhamento (guia_encaminhamento_dermato.pdf)'
     ),
 };
 

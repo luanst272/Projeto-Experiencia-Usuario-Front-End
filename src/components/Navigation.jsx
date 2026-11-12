@@ -31,9 +31,7 @@ export function Sidebar({ activeView, onNavigate, userName }) {
           <HeartPulseIcon size={22} />
         </div>
         <div>
-          <div className="brand">
-            MedFEI <span>· Saúde+</span>
-          </div>
+          <div className="brand">Saúde+</div>
           <div className="brand-sub">Sua saúde, no seu tempo.</div>
         </div>
       </div>
@@ -111,9 +109,7 @@ export function Topbar({
         <div className="brand-mark">
           <HeartPulseIcon size={20} />
         </div>
-        <strong>
-          MedFEI <span>· Saúde+</span>
-        </strong>
+        <strong>Saúde+</strong>
       </div>
 
       <div className="crumb">
